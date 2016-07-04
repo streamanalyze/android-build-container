@@ -30,7 +30,7 @@ RUN \
   apt-get clean && \
   rm -rf /var/cache/oracle-jdk8-installer
 
-ENV PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/$ANDROID_BUILD_TOOLS_VERSION:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin
+ENV PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/$ANDROID_BUILD_TOOLS_VERSION:$ANDROID_NDK_HOME:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin
 
 RUN \
   apt-get update && \
